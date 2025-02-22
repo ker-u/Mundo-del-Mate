@@ -5,7 +5,7 @@
 
 body {
     font-family: "Open Sans", serif;
-    font-size: 26px;
+    font-size: 22px;
     background-color: bisque;
 }
 
@@ -45,10 +45,11 @@ body {
 .navbar-toggler:focus {
     box-shadow: none;
 }
-.navbar-toggler:hover {
+.navbar-toggler:active {
     transition: 0.1s;
     outline: solid #800000 2px;
 }
+
 .navbar-collapse {
     display: flex;
     justify-content: center;
@@ -102,7 +103,7 @@ h3 {
 
 /*main*/
 main {
-    margin: 36px 20px;    
+    margin: 34px 16px;    
 }
 .list-m {
     display: flex;
@@ -110,7 +111,8 @@ main {
     justify-content: space-evenly;
 }
 .ifrs {
-    width: 70vh;
+    width: 90%;
+    max-width: 416px;
     height: 465px;
     margin: 8px;
 }
@@ -139,7 +141,7 @@ main {
     
 /*secciones de info*/
 .textoinf div img {
-    margin: 25px;
+    margin-block: 18px;
     width: 85%;
     max-width: 525px;
 }
@@ -149,7 +151,7 @@ main {
     background-color: #deb887;
     border: solid #800000 4px;
     border-radius: 8%;
-    margin: 18px;
+    margin-block: 18px;
 }
 .infoextra {
     list-style: none;
@@ -163,15 +165,17 @@ main {
 }
 .sec iframe {
     display: inline-block;
-    width: 65vb;
+    width: 90%;
+    max-width: 460px;
 }
 form label {
     font-size: 24px;
+    padding: 8px;
 }
 form {
     display: inline-block;
     text-align: start;
-    padding: 46px;
+    padding: 36px;
     background-color: #deb887;
     border: solid 4px #800000;
     border-radius: 8%;
@@ -191,7 +195,7 @@ footer {
     margin: 14px;
 }
 .redes img {
-    width: 60px;
+    width: 50px;
     border-radius: 26%;
 }
 .redes img:hover {
@@ -209,15 +213,43 @@ footer {
     align-content: end;
 }
 .imgfinal img {
-    width: 136px;
+    width: 120px;
     border-radius: 22%;
 }
 
 /*mediaqueries*/
+@media (max-width: 394px) {
+    main {
+        margin: 30px 8px;
+    }
+    .ifrs {
+        height: 366px;
+    }
+    .imgfinal img {
+        width: 0;
+    }
+    form {
+        text-align: center;
+        padding: 6% 8%;
+    }
+    footer {
+        text-align: center;
+    }
+    .redes {
+        justify-content: center;
+    }
+}
 @media (min-width: 992px) {
+    body {
+        font-size: 26px;
+    }
     .logo {
         margin-top: 42px;
     }
+    main {
+        margin: 36px 20px;
+    }
+
     .navbar-brand {
         text-decoration: none;
         position: fixed;
@@ -240,5 +272,14 @@ footer {
     }
     #activo:hover {
         transition: 0.15s;
+    }
+    form {
+        padding: 46px;
+    }
+    .redes img {
+        width: 60px;
+    }
+    .imgfinal img {
+        width: 136px;
     }
 }
