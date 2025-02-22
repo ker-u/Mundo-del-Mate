@@ -190,6 +190,21 @@ footer {
 .cont p {
     margin: 14px;
 }
+.redes img {
+    width: 60px;
+    border-radius: 26%;
+}
+.redes img:hover {
+    transition: 0.1s;
+    outline: solid #4e2a1e 2px;
+}
+.redes li {
+    list-style: none;
+}
+.redes {
+    display: flex;
+    gap: 16px;
+}
 .imgfinal {
     align-content: end;
 }
