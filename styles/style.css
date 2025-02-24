@@ -9,7 +9,23 @@ body {
     background-color: bisque;
 }
 
-
+h1 {
+    color: blueviolet;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 32px;
+}
+h2 {
+    color: mediumpurple;
+    text-align: center;
+    font-size: 32px;
+    margin: 10px;
+}
+h3 {
+    color: mediumslateblue;
+    text-align: center;
+    font-size: 30px;
+}
 
 /*header*/
 .logo {
@@ -74,80 +90,16 @@ body {
     color: #a84dff;
 }
 
-h1 {
-    color: blueviolet;
-    text-align: center;
-    font-size: 38px;
-    margin-bottom: 32px;
-}
-
-h2 {
-    color: mediumpurple;
-    text-align: center;
-    font-size: 32px;
-    margin: 10px;
-}
-h3 {
-    color: mediumslateblue;
-    text-align: center;
-    font-size: 30px;
-}
-
-.desc-inicio {
-    text-align: center;
-}
-
-.desc {
-    margin-block: 28px;
-}
-
-/*main*/
-main {
-    margin: 34px 16px;    
-}
-.list-m {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-.ifrs {
-    width: 90%;
-    max-width: 416px;
-    height: 465px;
-    margin: 8px;
-}
-
-/*productos*/
-.productos img {
-    width: 152px;
-    border-radius: 22%;
-}
-.productos div {
-    width: 300px;
-    height: 400px;
-    padding: 12px;
-    background-color: #deb887;
-    border: solid 2px #800000;
-    border-radius: 6%;
-    margin: 8px;
-    display: inline-block;
-    text-align: center;
-}
-.productos {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-    
 /*secciones de info*/
 .textoinf div img {
     margin-block: 18px;
-    width: 85%;
+    width: 90%;
     max-width: 525px;
+    border-radius: 5%;
 }
 .textoinf div {
     text-align: center;
-    padding: 24px;
+    padding: 26px;
     background-color: #deb887;
     border: solid #800000 4px;
     border-radius: 8%;
@@ -156,7 +108,85 @@ main {
 .infoextra {
     list-style: none;
 }
+#ir-a-sdp {
+    text-decoration: none;
+    font-size: 24px;
+    color: blueviolet;
+}
+#ir-a-sdp:hover {
+    transition: 0.2s;
+    color: #a84dff;
+    text-decoration: underline;
+}
 
+/*main*/
+main {
+    margin: 34px 16px;    
+}
+
+.list-m {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.ifrs {
+    width: 90%;
+    max-width: 408px;
+    height: 465px;
+    margin: 8px;
+}
+
+/*productos*/
+.productos img {
+    max-width: 100%;
+    max-height: 232px;
+    border-radius: 22%;
+    align-self: center;
+    justify-self: center;
+}
+.productos div {
+    width: 280px;
+    height: 420px;
+    padding: 12px;
+    background-color: #deb887;
+    border: solid 2px #800000;
+    border-radius: 6%;
+    margin: 8px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+.productos div:hover {
+    transition: 0.1s;
+    outline: solid #800000 2px;
+}
+.productos p {
+    font-size: 20px;
+    padding-top: 4px;
+    text-align: start;
+}
+.productos a {
+    text-decoration: none;
+    color: blueviolet;
+    display: inline-block;
+    text-align: center;
+    padding: 6px;
+    border: solid #800000 2px;
+    border-radius: 15%;
+}
+.productos a:hover {
+    transition: 0.2s;
+    color: #a84dff;
+    text-decoration: underline;
+}
+#perso {
+    text-align: center;
+    color: #a52a2a;
+}
+.productos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
 
 /*contacto*/
 .sec {
@@ -199,15 +229,15 @@ footer {
     border-radius: 26%;
 }
 .redes img:hover {
-    transition: 0.1s;
-    outline: solid #4e2a1e 2px;
+    transition: transform 0.1s;
+    transform: scale(1.1);
 }
 .redes li {
     list-style: none;
 }
 .redes {
     display: flex;
-    gap: 16px;
+    gap: 18px;
 }
 .imgfinal {
     align-content: end;
@@ -239,17 +269,27 @@ footer {
         justify-content: center;
     }
 }
+
 @media (min-width: 992px) {
     body {
-        font-size: 26px;
+        font-size: 24px;
     }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 34px;
+    }
+    h3 {
+        font-size: 32px;
+    }
+
     .logo {
         margin-top: 42px;
     }
-    main {
-        margin: 36px 20px;
+    .logo img {
+        width: 152px;
     }
-
     .navbar-brand {
         text-decoration: none;
         position: fixed;
@@ -273,11 +313,30 @@ footer {
     #activo:hover {
         transition: 0.15s;
     }
+    main {
+        margin: 36px 20px;
+    }
+    .ifrs {
+        max-width: 460px;
+        height: 517px;
+    }
+    #ir-a-sdp {
+        font-size: 26px;
+    }
+    .productos p {
+        font-size: 20px;
+    }
+    .productos a {
+        font-size: 20px;
+    }
     form {
         padding: 46px;
     }
     .redes img {
         width: 60px;
+    }
+    .redes {
+        gap: 20px;
     }
     .imgfinal img {
         width: 136px;
