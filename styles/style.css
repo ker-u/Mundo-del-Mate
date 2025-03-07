@@ -6,24 +6,22 @@
 body {
     font-family: "Open Sans", serif;
     font-size: 22px;
-    background-color: bisque;
+    background: linear-gradient(to right, beige, bisque);
 }
 
-h1 {
-    color: blueviolet;
+h1, h2, h3 {
     text-align: center;
+    color: blueviolet;
     font-size: 38px;
+    margin: 10px;
     margin-bottom: 32px;
 }
 h2 {
     color: mediumpurple;
-    text-align: center;
     font-size: 32px;
-    margin: 10px;
 }
 h3 {
     color: mediumslateblue;
-    text-align: center;
     font-size: 30px;
 }
 
@@ -31,6 +29,7 @@ h3 {
 .logo {
     display: flex;
     justify-content: center;
+    
 }
 .logo img {
     width: 148px;
@@ -47,39 +46,27 @@ h3 {
     width: 100%;
     top: 0;
 }
-.navbar-brand {
-    color: #4e2a1e;
-}
-.navbar-brand:hover {
-    transition: 0.3s;
-    color: #a52a2a;
-}
-.navbar-toggler {
+.navbar-toggler, .navbar-toggler:focus {
     border: solid #800000 2px;
     border-radius: 20%;
-}
-.navbar-toggler:focus {
     box-shadow: none;
 }
-.navbar-toggler:active {
-    transition: 0.1s;
+.navbar-toggler:hover {
     outline: solid #800000 2px;
 }
-
 .navbar-collapse {
     display: flex;
     justify-content: center;
 }
 .nav-item {
-    margin: 12px;
-    display: inline-block;
     text-align: center;
+    margin: 12px;
 }
 .nav-link {
+    transition: 0.3s;
     color: #4e2a1e;
 }
 .nav-link:hover {
-    transition: 0.3s;
     color: #a52a2a;
 }
 #activo {
@@ -108,13 +95,14 @@ h3 {
 .infoextra {
     list-style: none;
 }
+
 #ir-a-sdp {
+    transition: 0.2s;
     text-decoration: none;
     font-size: 24px;
     color: blueviolet;
 }
 #ir-a-sdp:hover {
-    transition: 0.2s;
     color: #a84dff;
     text-decoration: underline;
 }
@@ -145,6 +133,7 @@ main {
     justify-self: center;
 }
 .productos div {
+    transition: 0.1s;
     width: 280px;
     height: 420px;
     padding: 12px;
@@ -156,8 +145,8 @@ main {
     grid-template-rows: 1fr auto;
 }
 .productos div:hover {
-    transition: 0.1s;
     outline: solid #800000 2px;
+    transform: translateY(-2px);
 }
 .productos p {
     font-size: 20px;
@@ -165,6 +154,7 @@ main {
     text-align: start;
 }
 .productos a {
+    transition: 0.2s;
     text-decoration: none;
     color: blueviolet;
     display: inline-block;
@@ -174,7 +164,6 @@ main {
     border-radius: 15%;
 }
 .productos a:hover {
-    transition: 0.2s;
     color: #a84dff;
     text-decoration: underline;
 }
@@ -191,7 +180,6 @@ main {
 /*contacto*/
 .sec {
     text-align: center;
-    width: 100%;
 }
 .sec iframe {
     display: inline-block;
@@ -283,28 +271,11 @@ footer {
     h3 {
         font-size: 32px;
     }
-
     .logo {
         margin-top: 42px;
     }
     .logo img {
         width: 152px;
-    }
-    .navbar-brand {
-        text-decoration: none;
-        position: fixed;
-        top: 140px;
-        padding: 10px;
-        background-color: #deb887;
-        border: solid #800000 2px;
-        border-radius: 22%;
-        opacity: 0.2;
-        transition: opacity 3.4s ease-in;
-    }
-    .navbar-brand:hover {
-        transition: 0.15s;
-        color: #a52a2a;
-        opacity: 1;
     }
     #activo {
         transition: 2s;
@@ -323,10 +294,7 @@ footer {
     #ir-a-sdp {
         font-size: 26px;
     }
-    .productos p {
-        font-size: 20px;
-    }
-    .productos a {
+    .productos p, .productos a {
         font-size: 20px;
     }
     form {
