@@ -1,0 +1,13 @@
+#ir-a-sdp {
+    transition: $normal;
+    text-decoration: none;
+    font-size: $s;
+    color: $flow;
+    &:hover {
+        color: $warning-flow;
+        text-decoration: underline;
+    }
+}
+.list-p {
+    display: none;
+}

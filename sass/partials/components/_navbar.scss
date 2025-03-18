@@ -1,0 +1,42 @@
+.navbar {
+    position: fixed;
+    z-index: 4;
+    transition: opacity 2s 4s;
+    opacity: 0.9;
+    width: 100%;
+    padding: 18px;
+    background-color: $tertiary-color;
+    border-block: solid $border-color 4px;
+    .navbar-toggler {
+        transition: $fast;
+        border: solid $border-color 2px;
+        border-radius: 20%;
+        &:focus {
+            box-shadow: none;
+            outline: solid $border-color 2px;
+        }
+    }
+}
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
+}
+.nav-item {
+    text-align: center;
+    margin: 12px;
+}
+.nav-link {
+    transition: $normal;
+    color: $button;
+    &:hover {
+        color: $warning-buttom;
+        transform: scale(1.1);
+    }
+}
+#activo {
+    transition: $normal;
+    color: $flow;
+    &:hover {
+        color: $warning-flow;
+    }
+}

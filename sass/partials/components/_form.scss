@@ -1,0 +1,12 @@
+form {
+    display: inline-block;
+    text-align: start;
+    padding: 36px;
+    background-color: $tertiary-color;
+    border: solid $border-color 4px;
+    border-radius: 8%;
+    label {
+        font-size: $s;
+        padding: 8px;
+    }
+}

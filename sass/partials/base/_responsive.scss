@@ -1,0 +1,103 @@
+@media (max-width: 394px) {
+    main {
+        margin: 30px 8px;
+    }
+    .list-m iframe {
+        height: 366px;
+    }
+    form {
+        text-align: center;
+        padding: 6% 8%;
+    }
+    footer {
+        text-align: center;
+    }
+    .redes {
+        justify-content: center;
+    }
+    .imgfinal img {
+        width: 0;
+    }
+}
+@media (min-width: 644px) {
+    .carousel {
+        display: none;
+        img {
+            width: 0;
+        }
+    }
+    .list-p {
+        transform: scale(1.02);
+        padding-bottom: 14px;
+        margin-inline: 3.1vw;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 8px 46px;
+        img {
+            transition: $normal;
+            place-self: center;
+            width: auto;
+            max-height: 140px;
+            &:hover {
+                transform: scale(1.08);
+                outline: solid $border-color 2px;
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    body {
+        font-size: $s;
+    }
+    main {
+        margin: 36px 20px;
+    }
+    h1 {
+        font-size: $xxxl;
+    }
+    h2 {
+        font-size: $xl;
+    }
+    h3 {
+        font-size: $l;
+    }
+    .navbar {
+        &:hover {
+            transition: $normal;
+            opacity: 1;
+        }
+    }
+    .logo img {
+        width: 152px;
+        margin-top: 165px;
+    }
+    #activo {
+        color: $button;
+    }
+    .productos p, .productos a {
+        font-size: $xxs;
+    }
+    #ir-a-sdp {
+        font-size: $s-v2;
+    }
+    .list-p {
+        margin-inline: 8vw;
+    }
+    .list-m iframe {
+        max-width: 460px;
+        height: 517px;
+    }
+    form {
+        padding: 46px;
+    }
+    .redes {
+        gap: 20px;
+        img {
+            width: 60px;
+        }
+    }
+    .imgfinal img {
+        width: 136px;
+    }
+}

@@ -1,0 +1,19 @@
+.list-m {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    iframe {
+        width: 90%;
+        max-width: 408px;
+        height: 465px;
+        margin: 8px;
+    }
+}
+.sec {
+    text-align: center;
+    iframe {
+        display: inline-block;
+        width: 90%;
+        max-width: 495px;
+    }
+}

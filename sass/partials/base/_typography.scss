@@ -1,0 +1,23 @@
+body {
+    font-family: "Open Sans", serif;
+    font-size: $xs;
+    background-image: linear-gradient(to left, $primary-color, $secondary-color);
+}
+main {
+    margin: 34px 16px;
+}
+h1, h2, h3 {
+    text-align: center;
+    color: $flow;
+    font-size: $xl;
+    margin: 10px;
+    margin-bottom: 32px;
+}
+h2 {
+    color: $soft-flow;
+    font-size: $l;
+}
+h3 {
+    color: $soft-flow-v2;
+    font-size: $m;
+}
