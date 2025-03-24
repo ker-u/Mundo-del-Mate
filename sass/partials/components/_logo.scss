@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     img {
+        transition: $normal;
         width: 148px;
         border: solid black 1.7px;
         border-radius: 100%;

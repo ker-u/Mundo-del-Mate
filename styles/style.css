@@ -8,9 +8,10 @@
 }
 
 body {
+  transition: 0.2s;
   font-family: "Open Sans", serif;
   font-size: 22px;
-  background-image: linear-gradient(to left, #ffe4c4, beige);
+  background-image: linear-gradient(to left, #d4bb9b, #f5f5dc);
 }
 
 main {
@@ -18,6 +19,7 @@ main {
 }
 
 h1, h2, h3 {
+  transition: 0.2s;
   text-align: center;
   color: #8a2be2;
   font-size: 34px;
@@ -36,6 +38,7 @@ h3 {
 }
 
 .navbar {
+  transition: 0.2s;
   position: fixed;
   z-index: 4;
   transition: opacity 2s 4s;
@@ -87,6 +90,7 @@ h3 {
   justify-content: center;
 }
 .logo img {
+  transition: 0.2s;
   width: 148px;
   border: solid black 1.7px;
   border-radius: 100%;
@@ -329,9 +333,6 @@ footer {
   }
   #activo {
     color: #4e2a1e;
-  }
-  .productos p, .productos a {
-    font-size: 20px;
   }
   #ir-a-sdp {
     font-size: 26px;

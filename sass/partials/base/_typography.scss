@@ -1,4 +1,5 @@
 body {
+    transition: $normal;
     font-family: "Open Sans", serif;
     font-size: $xs;
     background-image: linear-gradient(to left, $primary-color, $secondary-color);
@@ -7,6 +8,7 @@ main {
     margin: 34px 16px;
 }
 h1, h2, h3 {
+    transition: $normal;
     text-align: center;
     color: $flow;
     font-size: $xl;
