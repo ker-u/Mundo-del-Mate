@@ -6,8 +6,8 @@
         height: 366px;
     }
     form {
-        text-align: center;
-        padding: 6% 8%;
+        max-width: 314px;
+        padding: 18px 4px;
     }
     footer {
         text-align: center;
@@ -86,7 +86,11 @@
         height: 517px;
     }
     form {
-        padding: 46px;
+        max-width: 416px;
+        padding: 44px;
+        label {
+            font-size: $s-v2;
+        }
     }
     .redes {
         gap: 20px;

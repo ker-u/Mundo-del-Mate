@@ -1,8 +1,15 @@
+@keyframes rotatebg {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 body {
     transition: $normal;
     font-family: "Open Sans", serif;
     font-size: $xs;
     background-image: linear-gradient(to left, $primary-color, $secondary-color);
+    background-size: 200% 200%;
+    animation: rotatebg 5s ease-out infinite;
 }
 main {
     margin: 34px 16px;

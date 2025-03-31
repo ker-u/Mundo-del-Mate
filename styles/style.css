@@ -7,11 +7,24 @@
   margin: 0;
 }
 
+@keyframes rotatebg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 body {
   transition: 0.2s;
   font-family: "Open Sans", serif;
   font-size: 22px;
   background-image: linear-gradient(to left, #d4bb9b, #f5f5dc);
+  background-size: 200% 200%;
+  animation: rotatebg 5s ease-out infinite;
 }
 
 main {
@@ -122,6 +135,12 @@ h3 {
   list-style: none;
 }
 
+.desc {
+  justify-self: center;
+  margin-inline: 3%;
+  max-width: 985px;
+}
+
 .productos {
   display: flex;
   flex-flow: row wrap;
@@ -209,9 +228,11 @@ h3 {
 }
 
 form {
+  transition: 0.2s;
   display: inline-block;
-  text-align: start;
-  padding: 36px;
+  place-content: center;
+  max-width: 368px;
+  padding: 26px;
   background-color: #deb887;
   border: solid #800000 4px;
   border-radius: 8%;
@@ -267,8 +288,8 @@ footer {
     height: 366px;
   }
   form {
-    text-align: center;
-    padding: 6% 8%;
+    max-width: 314px;
+    padding: 18px 4px;
   }
   footer {
     text-align: center;
@@ -345,7 +366,11 @@ footer {
     height: 517px;
   }
   form {
-    padding: 46px;
+    max-width: 416px;
+    padding: 44px;
+  }
+  form label {
+    font-size: 26px;
   }
   .redes {
     gap: 20px;

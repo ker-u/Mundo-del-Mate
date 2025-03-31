@@ -1,7 +1,9 @@
 form {
+    transition: $normal;
     display: inline-block;
-    text-align: start;
-    padding: 36px;
+    place-content: center;
+    max-width: 368px;
+    padding: 26px;
     background-color: $tertiary-color;
     border: solid $border-color 4px;
     border-radius: 8%;
